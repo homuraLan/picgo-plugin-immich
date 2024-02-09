@@ -17,6 +17,7 @@ export function config(ctx: IPicGo): IPluginConfig[] {
     url: '',
     token: '',
     albumId: DEFAULT_ALBUM_NAME,
+    shareLinkId: DEFAULT_ALBUM_NAME,
     uniqueImage: DEFAULT_UNIQUE_IMAGE,
     uniqueImageSizeLimit: DEFAULT_UNIQUE_IMAGE_SIZE_LIMIT,
   }
@@ -69,25 +70,15 @@ export function config(ctx: IPicGo): IPluginConfig[] {
         return ctx.i18n.translate<LocaleKey>('UPLOADER_CONFIG_ALBUM_ID')
       },
     },
-    // {
-    //   name: 'uniqueImage',
-    //   type: 'confirm',
-    //   default: userConfig.uniqueImage,
-    //   required: false,
-    //   get message(): string {
-    //     return ctx.i18n.translate<LocaleKey>('UPLOADER_CONFIG_UNIQUE_IMAGE')
-    //   },
-    // },
-    // {
-    //   name: 'uniqueImageSizeLimit',
-    //   type: 'input',
-    //   default: userConfig.uniqueImageSizeLimit,
-    //   required: false,
-    //   get message(): string {
-    //     return ctx.i18n.translate<LocaleKey>('UPLOADER_CONFIG_UNIQUE_IMAGE_SIZE_LIMIT')
-    //   },
-    //   when: !isGui ? (answer: any): boolean => answer.uniqueImage : undefined,
-    // },
+    {
+      name: 'shareLinkId',
+      type: 'input',
+      default: userConfig.shareLinkId,
+      required: false,
+      get message(): string {
+        return ctx.i18n.translate<LocaleKey>('UPLOADER_CONFIG_SHARE_LINK_ID')
+      },
+    },
   ]
 }
 

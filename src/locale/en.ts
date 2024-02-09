@@ -7,6 +7,7 @@ export const en: Locale = {
   UPLOADER_CONFIG_URL: 'immich Web URL',
   UPLOADER_CONFIG_TOKEN: 'immich API Token',
   UPLOADER_CONFIG_ALBUM_ID: 'Album ID',
+  UPLOADER_CONFIG_SHARE_LINK_ID: 'ShareLink ID',
   UPLOADER_CONFIG_UNIQUE_IMAGE: 'Avoid uploading duplicate images in the album',
   UPLOADER_CONFIG_UNIQUE_IMAGE_SIZE_LIMIT:
     'Do not validate image duplicates if the image size exceeds this value',

@@ -38,13 +38,13 @@ immich API token.
 你可以在设置中生成 API Token。  
 
 
-
 ### `albumId`
 
 - Default: `unsorted`
 - Example: `mTmo_j9SVEie3ETcCMY3YruI`
 
-相册的编号，你只可以使用**共享相册编号** 
+你需要获取**共享相册编号**和**相册编号**，二者缺一不可。
+
 ![image](./assets/shareid.png)  
 进入相册后，你可以在 url 上找到相册编号。  
 

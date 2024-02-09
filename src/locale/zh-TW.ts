@@ -7,6 +7,7 @@ export const zhTW: Locale = {
   UPLOADER_CONFIG_URL: 'immich 網頁地址',
   UPLOADER_CONFIG_TOKEN: 'immich API Token',
   UPLOADER_CONFIG_ALBUM_ID: '相簿編號',
+  UPLOADER_CONFIG_SHARE_LINK_ID: '共享链接編號',
   UPLOADER_CONFIG_UNIQUE_IMAGE: '避免在相簿中上傳重複圖片',
   UPLOADER_CONFIG_UNIQUE_IMAGE_SIZE_LIMIT: '若圖片大小超過該值則不驗證圖片是否重複',
 
