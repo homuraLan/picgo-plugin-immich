@@ -55,10 +55,6 @@ immich API token.
 ![image](https://github.com/homuraLan/picgo-plugin-immich/blob/main/assets/shareid.png)  
 <br>
 ![albumId](https://github.com/homuraLan/picgo-plugin-immich/blob/main/assets/albumId.png) 
-
-
-
-
 <br>
 
 ## 对于 Typora
