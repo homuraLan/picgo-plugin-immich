@@ -34,7 +34,7 @@ immich 网页地址，需包含协议。
 - Example: `xxxxxxxxxxxxx`
 
 immich API token.  
-![image](https://github.com/Sincejunly/picgo-plugin-immich/assets/96775034/87197ca6-a5bd-4533-bfe5-0477f24a078b)   
+![image](https://github.com/homuraLan/picgo-plugin-immich/assets/96775034/87197ca6-a5bd-4533-bfe5-0477f24a078b)   
 你可以在设置中生成 API Token。  
 
 
@@ -49,9 +49,12 @@ immich API token.
 - Example: `mTmo_j9SVEie3ETcCMY3YruI`
 
 你需要获取**共享链接编号**和**相册编号**，二者缺一不可。
-进入相册后，你可以在 url 上找到相册编号。  
-![image](./assets/shareid.png)  
-![albumId](./assets/albumId.png) 
+<br>
+进入相册后，你可以在 url 上找到相册编号。
+<br>
+![image](https://github.com/homuraLan/picgo-plugin-immich/blob/main/assets/shareid.png)  
+<br>
+![albumId](https://github.com/homuraLan/picgo-plugin-immich/blob/main/assets/albumId.png) 
 
 
 

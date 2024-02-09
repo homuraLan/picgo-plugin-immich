@@ -48,10 +48,12 @@ You can generate an API Token from the settings.
 - Example: `mTmo_j9SVEie3ETcCMY3YruI`
 
 You need to obtain the ***shared link id*** and ***album id***, both of which are indispensable.
+<br>
 After entering the album, you can find the album ID in the URL. 
-![image](./assets/shareid.png)  
-![albumId](./assets/albumId.png) 
-
+<br>
+![image](https://github.com/homuraLan/picgo-plugin-immich/blob/main/assets/shareid.png)  
+<br>
+![albumId](https://github.com/homuraLan/picgo-plugin-immich/blob/main/assets/albumId.png) 
 <br>
 
 ## For Typora
