@@ -14,7 +14,6 @@
     }
   },
   "scripts": {
-    "commit": "cz",
     "release": "standard-version",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
