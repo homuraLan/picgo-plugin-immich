@@ -92,8 +92,8 @@ class UploaderUtils {
   
   private setImageInfo(imageInfo: IImgInfo, imageid: string): void {
     //const url = imageUrl ? `${this.userConfig.url}/${imageUrl}` : ''
-    const url = imageid ? `${this.userConfig.url}/api/asset/file/${imageid}?key=${this.userConfig.albumId}?isThumb=false&isWeb=true`:''
-    const imgUrl = imageid ? `${this.userConfig.url}/api/asset/file/${imageid}?key=${this.userConfig.albumId}?isThumb=true&isWeb=true`:''
+    const url = imageid ? `${this.userConfig.url}/api/asset/file/${imageid}?isThumb=false&isWeb=false&key=${this.userConfig.albumId}`:''
+    const imgUrl = imageid ? `${this.userConfig.url}/api/asset/thumbnail/${imageid}?format=WEBP&key=${this.userConfig.albumId}`:''
     imageInfo['imgUrl'] = imgUrl
     imageInfo['url'] = url
   }
