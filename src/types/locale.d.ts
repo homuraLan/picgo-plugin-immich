@@ -1,0 +1,30 @@
+export interface Locale {
+  PLUGIN_VERSION_ERROR: string
+
+  // uploader config
+  UPLOADER_CONFIG_URL: string
+  UPLOADER_CONFIG_TOKEN: string
+  UPLOADER_CONFIG_ALBUM_ID: string
+  UPLOADER_CONFIG_UNIQUE_IMAGE: string
+  UPLOADER_CONFIG_UNIQUE_IMAGE_SIZE_LIMIT: string
+
+  // uploader config validate
+  UPLOADER_CONFIG_VALIDATE_URL_EMPTY: string
+  UPLOADER_CONFIG_VALIDATE_TOKEN_EMPTY: string
+
+  // uploader config formatter
+  UPLOADER_CONFIG_FORMATTER_INVALID: string
+  UPLOADER_CONFIG_FORMATTER_RESULT_LOG: string
+
+  // uploader
+  UPLOADER_NO_INPUT: string
+  UPLOADER_INVALID_INPUT: string
+  UPLOADER_FAILED: string
+  UPLOADER_FAILED_TITLE_NOTIFY: string
+  UPLOADER_FAILED_BODY_NOTIFY: string
+  UPLOADER_UPLOAD_IMAGE_LOG: string
+  UPLOADER_UPLOAD_UNIQUE_LOG: string
+  UPLOADER_UPLOAD_RESULT_LOG: string
+}
+
+export type LocaleKey = keyof Locale

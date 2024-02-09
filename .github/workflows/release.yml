@@ -1,0 +1,29 @@
+# name: Releases
+
+# on: 
+#   push:
+#     tags:
+#         - '*'
+
+# permissions:
+#     contents: write
+
+# jobs:
+
+#     github-release:
+#         name: GitHub Release
+
+#         runs-on: ubuntu-latest
+
+#         # Release if stable tag is pushed
+#         if: ${{ !contains(github.ref, '-') }}
+#         steps:
+#             -
+#                 name: Checkout
+#                 uses: actions/checkout@v4
+#             -
+#                 name: Release
+#                 uses: softprops/action-gh-release@v1
+#                 with:
+#                     body: |
+#                         [CHANGELOG](https://github.com/homuraLan/picgo-plugin-immich/blob/${{ github.ref_name }}/CHANGELOG.md)

@@ -1,0 +1,41 @@
+name: 'Semantic Release'
+
+on:
+  push:
+    branches:
+      - main 
+    paths:
+      - '**'  
+
+permissions:
+  contents: write
+
+jobs:
+
+  publish:
+    runs-on: ubuntu-latest
+    #if: contains(github.event.head_commit.message, 'release')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure Git
+        run: |
+          git config user.name "homura"
+          git config user.email "943384135@qq.com"    
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.11.0
+          registry-url: https://registry.npmjs.org/  
+      - 
+        name: Install Dependencies and Run Standard Version
+        run: |
+          npm install
+          npm run build
+
+      - name: release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+ 

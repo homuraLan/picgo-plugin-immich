@@ -1,0 +1,11 @@
+name: 'Scheduled Sync'
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  call-reusable-sync:
+    name: Call Reusable Sync
+    uses: ./.github/workflows/sync-reusable.yml
+    secrets: inherit

@@ -1,0 +1,26 @@
+name: 'Reusable Sync'
+
+on:
+  workflow_call:
+
+jobs:
+  gitee:
+    name: Sync to Gitee
+
+    runs-on: ubuntu-latest
+
+    if: ${{ github.actor != 'dependabot[bot]' }}
+
+    steps: 
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      -
+        name: Sync
+        uses: ttionya/Repository-Sync-Hub@v1
+        with:
+          target_repository: 'git@gitee.com:homurass/picgo-plugin-immich.git'
+          ssh_private_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+  
