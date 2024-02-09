@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-immich",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Picgo plugin for immich",
   "main": "dist/index.js",
   "files": [
