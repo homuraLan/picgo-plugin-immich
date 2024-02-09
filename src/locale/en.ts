@@ -27,7 +27,7 @@ export const en: Locale = {
   UPLOADER_FAILED_TITLE_NOTIFY: 'Upload error',
   UPLOADER_FAILED_BODY_NOTIFY: 'Please check your network connection and configuration.',
   UPLOADER_UPLOAD_IMAGE_LOG:
-    'Uploading ${filename}, checksum: ${checksum}, file size: ${size}, album: ${albumId}',
+    'Uploading ${filename}, checksum: ${checksum}, file size: ${size}, album: ${albumId}, shareId: ${shareLinkId}',
   UPLOADER_UPLOAD_UNIQUE_LOG: '${filename}: File is a duplicate, skipping upload',
   UPLOADER_UPLOAD_RESULT_LOG: '${filename}: ${url}',
 }

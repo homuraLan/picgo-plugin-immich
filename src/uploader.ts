@@ -41,7 +41,7 @@ class UploaderUtils {
   }
 
   private async createNormalTask(imageInfo: IImgInfo): Promise<void> {
-    const uploadedPhotoData = await this.uploadPhoto(imageInfo, this.userConfig.albumId)
+    const uploadedPhotoData = await this.uploadPhoto(imageInfo, this.userConfig.albumId,this.userConfig.shareLinkId)
 
     await this.addAssetsToAlbum(uploadedPhotoData.id, this.userConfig.albumId)
     return this.setImageInfo(imageInfo, uploadedPhotoData.id)
@@ -98,7 +98,7 @@ class UploaderUtils {
     imageInfo['url'] = url
   }
 
-  private async uploadPhoto(imageInfo: IImgInfo, albumId: string): Promise<Photo> {
+  private async uploadPhoto(imageInfo: IImgInfo, albumId: string,shareLinkId: string): Promise<Photo> {
     const formData = new FormData()
     const deviceAssetId: string = Date.now().toString();
 
@@ -121,6 +121,7 @@ class UploaderUtils {
         checksum: imageInfo['checksum'] || 'empty',
         size: `${imageInfo.buffer!.byteLength}`,
         albumId,
+        shareLinkId
       })
     )
 

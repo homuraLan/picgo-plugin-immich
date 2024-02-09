@@ -23,7 +23,7 @@ export const zhCN: Locale = {
   UPLOADER_FAILED_TITLE_NOTIFY: '上传错误',
   UPLOADER_FAILED_BODY_NOTIFY: '请检查网络连接和配置。',
   UPLOADER_UPLOAD_IMAGE_LOG:
-    '正在上传 ${filename}，checksum: ${checksum}，文件大小: ${size}，相册: ${albumId}',
+    '正在上传 ${filename}，checksum: ${checksum}，文件大小: ${size}，相册: ${albumId}, 共享链接：${shareLinkId}',
   UPLOADER_UPLOAD_UNIQUE_LOG: '${filename}: 文件重复，跳过上传',
   UPLOADER_UPLOAD_RESULT_LOG: '${filename}: ${url}',
 }

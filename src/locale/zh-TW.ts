@@ -23,7 +23,7 @@ export const zhTW: Locale = {
   UPLOADER_FAILED_TITLE_NOTIFY: '上傳錯誤',
   UPLOADER_FAILED_BODY_NOTIFY: '請檢查您的網路連線和配置。',
   UPLOADER_UPLOAD_IMAGE_LOG:
-    '正在上傳 ${filename}，checksum: ${checksum}，檔案大小: ${size}，相簿: ${albumId}',
+    '正在上傳 ${filename}，checksum: ${checksum}，檔案大小: ${size}，相簿: ${albumId}, 共享链接：${shareLinkId}',
   UPLOADER_UPLOAD_UNIQUE_LOG: '${filename}: 檔案重複，跳過上傳',
   UPLOADER_UPLOAD_RESULT_LOG: '${filename}: ${url}',
 }

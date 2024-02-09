@@ -65,7 +65,7 @@ export function config(ctx: IPicGo): IPluginConfig[] {
       name: 'albumId',
       type: 'input',
       default: userConfig.albumId,
-      required: false,
+      required: true,
       get message(): string {
         return ctx.i18n.translate<LocaleKey>('UPLOADER_CONFIG_ALBUM_ID')
       },
@@ -74,7 +74,7 @@ export function config(ctx: IPicGo): IPluginConfig[] {
       name: 'shareLinkId',
       type: 'input',
       default: userConfig.shareLinkId,
-      required: false,
+      required: true,
       get message(): string {
         return ctx.i18n.translate<LocaleKey>('UPLOADER_CONFIG_SHARE_LINK_ID')
       },
@@ -121,7 +121,6 @@ export function formatUserConfig(ctx: IPicGo, userConfig: UserConfig): Formatted
     url: userConfig.url.replace(/\/*$/, ''),
     token: userConfig.token,
     albumId: userConfig.albumId || DEFAULT_ALBUM_NAME,
-    uniqueImage,
-    uniqueImageSizeLimit,
+    shareLinkId: userConfig.shareLinkId || DEFAULT_ALBUM_NAME
   }
 }
