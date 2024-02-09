@@ -43,10 +43,16 @@ immich API token.
 - Default: `unsorted`
 - Example: `mTmo_j9SVEie3ETcCMY3YruI`
 
-你需要获取**共享相册编号**和**相册编号**，二者缺一不可。
+### `shareLinkId`
 
-![image](./assets/shareid.png)  
+- Default: `unsorted`
+- Example: `mTmo_j9SVEie3ETcCMY3YruI`
+
+你需要获取**共享链接编号**和**相册编号**，二者缺一不可。
 进入相册后，你可以在 url 上找到相册编号。  
+![image](./assets/shareid.png)  
+![albumId](./assets/albumId.png) 
+
 
 
 

@@ -42,9 +42,15 @@ You can generate an API Token from the settings.
 - Default: `unsorted`
 - Example: `mTmo_j9SVEie3ETcCMY3YruI`  
 
-Album ID, you can only use regular `share Album`, **not** `Album`.  
+### `shareLinkId`
+
+- Default: `unsorted`
+- Example: `mTmo_j9SVEie3ETcCMY3YruI`
+
+You need to obtain the ***shared link id*** and ***album id***, both of which are indispensable.
+After entering the album, you can find the album ID in the URL. 
 ![image](./assets/shareid.png)  
-After entering the album, you can find the album ID in the URL.  
+![albumId](./assets/albumId.png) 
 
 <br>
 
